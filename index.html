@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C.VAINJAC – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ============================================================
+       CSS – 1. VARIABLES & RESET
+  ============================================================ -->
+  
+
+  <!-- ============================================================
+       CSS – 2. HEADER & NAVIGATION
+  ============================================================ -->
+  
+
+  <!-- ============================================================
+       CSS – 3. SECTIONS
+  ============================================================ -->
+  
+</head>
+<body>
+
+  <!-- ============================================================
+       HTML – HEADER
+  ============================================================ -->
+  <header>
+    <nav>
+
+      <!-- Logo → retour accueil -->
+      <button class="nav-logo" onclick="goTo('accueil')">C.VAINJAC</button>
+
+      <!-- Liens de navigation (desktop) -->
+      <div class="nav-links" id="nav-links">
+        <button class="nav-link active" onclick="goTo('apropos')">À propos</button>
+        <button class="nav-link"        onclick="goTo('stage')">Stage</button>
+        <button class="nav-link"        onclick="goTo('certifications')">Certifications</button>
+        <button class="nav-link"        onclick="goTo('competences')">Compétences</button>
+        <button class="nav-link"        onclick="goTo('projets')">Projets</button>
+        <button class="nav-link"        onclick="goTo('veille')">Veille</button>
+        <button class="nav-link"        onclick="goTo('contact')">Contact</button>
+      </div>
+
+      <!-- Boutons droite -->
+      <div class="nav-right">
+        <a class="btn-linkedin"
+           href="https://www.linkedin.com/in/corentin-vainjac-744176364/"
+           target="_blank" rel="noopener">LinkedIn</a>
+        <button class="btn-theme" id="theme-toggle" aria-label="Thème">🌙</button>
+        <!-- Burger (mobile uniquement) -->
+        <button class="btn-burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </nav>
+
+    <!-- Menu mobile déroulant -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-link" onclick="mobileGoTo('apropos')">À propos</button>
+      <button class="mobile-link" onclick="mobileGoTo('stage')">Stage</button>
+      <button class="mobile-link" onclick="mobileGoTo('certifications')">Certifications</button>
+      <button class="mobile-link" onclick="mobileGoTo('competences')">Compétences</button>
+      <button class="mobile-link" onclick="mobileGoTo('projets')">Projets</button>
+      <button class="mobile-link" onclick="mobileGoTo('veille')">Veille</button>
+      <button class="mobile-link" onclick="mobileGoTo('contact')">Contact</button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+       HTML – SECTIONS
+  ============================================================ -->
+  <main>
+
+    <!-- Accueil -->
+    <section class="section" id="accueil">
+      <h1 class="section-title">Corentin Vainjac</h1>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="apropos">
+      <h2 class="section-title">À propos</h2>
+    </section>
+
+    <!-- Stage -->
+    <section class="section" id="stage">
+      <h2 class="section-title">Stage</h2>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <h2 class="section-title">Certifications</h2>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section" id="competences">
+      <h2 class="section-title">Compétences</h2>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets">
+      <h2 class="section-title">Projets</h2>
+    </section>
+
+    <!-- Veille -->
+    <section class="section" id="veille">
+      <h2 class="section-title">Veille</h2>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-list">
+
+        <!-- Email -->
+        <a class="contact-card" href="mailto:vainjac.corentin@gmail.com">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">vainjac.corentin@gmail.com</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-card"
+           href="https://www.linkedin.com/in/corentin-vainjac-744176364/"
+           target="_blank" rel="noopener">
+          <div class="contact-icon">💼</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/corentin-vainjac</span>
+          </div>
+        </a>
+
+        <!-- Téléphone -->
+        <a class="contact-card" href="tel:+33771895134">
+          <div class="contact-icon">📞</div>
+          <div class="contact-info">
+            <span class="contact-label">Téléphone</span>
+            <span class="contact-value">07 71 89 51 34</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       HTML – FOOTER
+  ============================================================ -->
+  <footer>
+
+    <div class="footer-inner">
+
+      <!-- Colonne 1 : Identité -->
+      <div class="footer-col">
+        <div class="footer-name">Corentin Vainjac</div>
+        <div class="footer-bar"></div>
+        <p class="footer-desc">
+          Étudiant passionné en informatique et réseaux,
+          à la recherche de nouvelles opportunités pour
+          mettre mes compétences en pratique.
+        </p>
+        <div class="footer-socials">
+          <a class="footer-social-btn"
+             href="https://www.linkedin.com/in/corentin-vainjac-744176364/"
+             target="_blank" rel="noopener"
+             aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a class="footer-social-btn"
+             href="mailto:vainjac.corentin@gmail.com"
+             aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Liens rapides -->
+      <div class="footer-col">
+        <div class="footer-col-title">Liens Rapides</div>
+        <div class="footer-bar"></div>
+        <nav class="footer-nav">
+          <a class="footer-nav-link" onclick="goTo('accueil')">Accueil</a>
+          <a class="footer-nav-link" onclick="goTo('apropos')">À propos</a>
+          <a class="footer-nav-link" onclick="goTo('stage')">Stage</a>
+          <a class="footer-nav-link" onclick="goTo('certifications')">Certifications</a>
+          <a class="footer-nav-link" onclick="goTo('competences')">Compétences</a>
+          <a class="footer-nav-link" onclick="goTo('projets')">Projets</a>
+          <a class="footer-nav-link" onclick="goTo('veille')">Veille</a>
+          <a class="footer-nav-link" onclick="goTo('contact')">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Colonne 3 : Contact -->
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-bar"></div>
+        <ul class="footer-contact-list">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            vainjac.corentin@gmail.com
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l.95-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            07 71 89 51 34
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            France
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Barre de copyright -->
+    <div class="footer-bottom">
+      <span>© 2025 Corentin Vainjac. Tous droits réservés.</span>
+    </div>
+
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT – 1. SCROLL VERS UNE SECTION
+  ============================================================ -->
+  
+
+  <!-- ============================================================
+       JAVASCRIPT – 2. ONGLET ACTIF AU SCROLL (IntersectionObserver)
+  ============================================================ -->
+  
+
+  <!-- ============================================================
+       JAVASCRIPT – 3. TOGGLE DARK / LIGHT
+  ============================================================ -->
+  
+
+  <!-- ============================================================
+       JAVASCRIPT – 4. MENU BURGER (mobile)
+  ============================================================ -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
