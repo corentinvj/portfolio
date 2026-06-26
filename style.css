@@ -16,13 +16,7 @@
   --border:           #dde1e9;
 }
 
-.company-logo {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 6px;
-}
+
 
 [data-theme="dark"] {
   --bg-page:          #0f1117;
