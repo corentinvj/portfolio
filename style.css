@@ -421,3 +421,39 @@ footer {
   footer { padding: 40px 1.2rem 0; }
 }
 @media (max-width: 480px) { .section-title { font-size: 1.6rem; } }
+
+.apropos-name {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.apropos-desc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-top: 0.75rem;
+  max-width: 560px;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.6rem;
+  padding: 10px 22px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+.btn-cv:hover { background: #1d4ed8; }
