@@ -60,11 +60,4 @@ stageToggle.addEventListener('click', () => {
   stageDetails.classList.toggle('open');
 });
 
-// ----- js certif RGPD -----
-const certScroll = document.getElementById('cert-scroll');
-document.getElementById('cert-prev').addEventListener('click', () => {
-  certScroll.scrollBy({ left: -220, behavior: 'smooth' });
-});
-document.getElementById('cert-next').addEventListener('click', () => {
-  certScroll.scrollBy({ left: 220, behavior: 'smooth' });
-});
+
