@@ -529,3 +529,38 @@ footer {
   color: var(--border);
 }
 
+/* ---- LIGHTBOX ---- */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
