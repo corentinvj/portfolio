@@ -52,12 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ---- STAGE ----
-  const stageToggle = document.getElementById('stage-toggle');
-  const stageDetails = document.getElementById('stage-details');
-  stageToggle.addEventListener('click', () => {
-    stageToggle.classList.toggle('open');
-    stageDetails.classList.toggle('open');
+document.querySelectorAll('.experience-toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const card = toggle.closest('.experience-card');
+    const details = card.querySelector('.experience-details');
+    toggle.classList.toggle('open');
+    details.classList.toggle('open');
   });
+});
 
   // ---- LIGHTBOX ----
   const lightbox = document.getElementById('lightbox');
