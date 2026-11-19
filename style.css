@@ -587,6 +587,10 @@ footer {
 .btn-dl-stage:hover { background: #1d4ed8; }
 
 /* ===== VEILLE ===== */
+
+/* Espace sous le titre principal */
+#veille .section-title { margin-bottom: 40px; }
+
 #veille .veille-intro {
   border-left: 4px solid currentColor;
   padding: 4px 0 4px 18px;
